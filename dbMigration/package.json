@@ -1,0 +1,20 @@
+{
+  "name": "sql_postgresql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "migration.js",
+  "scripts": {
+    "migrate": "env-cmd -f ../social-repo/config/dev.env node-pg-migrate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "node-pg-migrate": "^6.2.1",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}
